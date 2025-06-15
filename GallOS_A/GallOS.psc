@@ -9,8 +9,8 @@
 
 Algoritmo GestionarArticulo
 	
-	Definir max, opc Como Entero
-	Definir i Como Entero
+	Definir max, opc, pos Como Entero
+	Definir i, j Como Entero
 	Definir canti Como Entero
 	Definir articulo Como Caracter
 	i=1
@@ -35,7 +35,30 @@ Algoritmo GestionarArticulo
 				Leer canti[i]
 				i=i+1
 			2:
-				
+				Si i=1 Entonces
+					Escribir "El inventario está vacío, no hay artículos para editar."
+				Sino
+					Escribir "Artículos disponibles para editar:"
+					Para j=1 Hasta i-1 Hacer
+						Si articulo[j]<>"" Entonces
+							Escribir j, ". ", articulo[j], " - ", canti[j], " unidades"
+						FinSi
+					FinPara
+					
+					Escribir "Ingrese el número del artículo que desea editar:"
+					Leer pos
+					
+					Si pos>=1 Y pos<i Y articulo[pos]<>"" Entonces
+						Escribir "Artículo actual: ", articulo[pos], " - ", canti[pos], " unidades"
+						Escribir "Ingrese el nuevo nombre del artículo:"
+						Leer articulo[pos]
+						Escribir "Ingrese la nueva cantidad del artículo:"
+						Leer canti[pos]
+						Escribir "Artículo editado correctamente."
+					Sino
+						Escribir "Número inválido o artículo ya eliminado."
+					FinSi
+				FinSi
 			3:
 				
 			4:
