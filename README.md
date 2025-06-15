@@ -1,1 +1,1 @@
-# GallOS
+Carpeta creada por Aráuz

@@ -41,7 +41,7 @@ Algoritmo GestionarArticulo
 			4:
 				
 			5:
-				
+				Escribir "Saliendo del programa..."
 			De Otro Modo:
 				Escribir "Digite de nuevo una opcion correcta"
 		FinSegun
