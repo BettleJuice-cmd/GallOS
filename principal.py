@@ -18,6 +18,7 @@ def menu_principal():
 
     a=0
     while a!=1:
+        os.system("pause")
         opcion = int(input("Selecciona una opción: "))
         if opcion == 1:
             gestionar()

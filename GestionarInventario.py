@@ -18,18 +18,18 @@ def inventario():
     while a!=1:
      opcion = int(input("Selecciona una opción: "))
      if opcion == 1:
-        aumentar_stock() 
+         aumentar_stock() 
      elif opcion == 2:
-        dar_baja_articulo()
+         dar_baja_articulo()
      elif opcion == 3:
-        modificar_articulo()
+         modificar_articulo()
      elif opcion == 4:
-        listar_articulos()
+         listar_articulos()
      elif opcion == 5:
-        return menu_principal()
+         menu_principal()
      else:
         print("Opción inválida. Por favor, selecciona una opción válida.") 
     else:
        print("Hasta la proxima...")
-       return menu_principal()
+       menu_principal()
 

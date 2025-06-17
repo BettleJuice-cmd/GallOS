@@ -1,5 +1,5 @@
 from ficheros import Articulo
-
+import os 
 def aumentar_stock():
     cod = input("Código: ")
     art = Articulo()
@@ -42,3 +42,25 @@ def modificar_articulo():
 def listar_articulos():
     Articulo.listar()
     input("ENTER para continuar...")
+
+
+def registrar_articulo():
+   os.system("cls")
+   cod = input('Cree el codigo del articulo: ')
+   art= Articulo()
+   if art.leer(cod):
+       print("El código ya existe.")
+   else:
+       nombre = input("Nombre: ")
+       cantidad = int(input("Cantidad: "))
+       precio = float(input("Precio: "))
+       Articulo(cod, nombre, cantidad, precio).guardar()
+
+
+def modificar_articulo():
+   cod = input("Ingrese el codido del articulo a modificar:")
+    
+
+
+def eliminar_articulo():
+   cod = input("Ingrese el codigo del articulo que desea eliminar: ")
