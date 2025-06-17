@@ -9,14 +9,15 @@
 
 Algoritmo GestionarArticulo
 	
+	// Definimos las variables que iremos a utilizar
 	Definir max, opc, pos Como Entero
 	Definir i, j Como Entero
-	Definir canti Como Entero
+	Definir cantidad Como Entero
 	Definir articulo Como Caracter
 	i=1
 	max=1000000
 	Dimensionar articulo[max]
-	Dimensionar canti[max]
+	Dimensionar cantidad[max]
 	
 	Mientras opc<>5 Hacer
 		Escribir "Digite una de las siguientes opciones: "
@@ -29,32 +30,44 @@ Algoritmo GestionarArticulo
 		
 		Segun opc Hacer
 			1:
-				Escribir "Escriba el nombre del articulo ", i , ":"
+				// En esta parte el propietario digita el artículo y la cantidad que se desea agregar
+				Escribir "Escriba el nombre del artículo ", i, ":"
 				Leer articulo[i]
-				Escribir "Ingrese la cantidad del articulo ", i , ":"
-				Leer canti[i]
+				Escribir "Ingrese la cantidad del artículo ", i, ":"
+				Leer cantidad[i]
 				i=i+1
 			2:
+				// En este apartado el propietario edita el artículo que el desee
+				
+				// En esta condicional si no existe ningún artículo revotará lo siguiente
 				Si i=1 Entonces
 					Escribir "El inventario está vacío, no hay artículos para editar."
+				// Si lo anterior no es verdadero lo lleverá a editar el artículo que el haya escogido
 				Sino
 					Escribir "Artículos disponibles para editar:"
+					// Lo que hace la variable "j" es que va revisando cada arreglo que existe y arroja luego una lista de los arreglos que existan
 					Para j=1 Hasta i-1 Hacer
 						Si articulo[j]<>"" Entonces
-							Escribir j, ". ", articulo[j], " - ", canti[j], " unidades"
+							Escribir j, ". ", articulo[j], " - ", cantidad[j], " unidades"
 						FinSi
 					FinPara
 					
+					// Acá se pide que el usuario digitge el número de la lista que desea editar 
 					Escribir "Ingrese el número del artículo que desea editar:"
 					Leer pos
 					
+					// Si el número que digito el usuario coinciden con los que existe, el usuario, podrá editar ese artículo
 					Si pos>=1 Y pos<i Y articulo[pos]<>"" Entonces
-						Escribir "Artículo actual: ", articulo[pos], " - ", canti[pos], " unidades"
+						Escribir "Artículo actual: ", articulo[pos], " - ", cantidad[pos], " unidades"
+						// El propietario podrá asignar el nuevo nombre del artículo que eligio
 						Escribir "Ingrese el nuevo nombre del artículo:"
 						Leer articulo[pos]
+						// El propietario podrá asignar una nueva cantidad de ese artículo editado
 						Escribir "Ingrese la nueva cantidad del artículo:"
-						Leer canti[pos]
+						Leer cantidad[pos]
+						// Por último se lanzará un mensaje de que fue editado correctamente
 						Escribir "Artículo editado correctamente."
+					// Si el número que digito el usuario no existe dentro de la lista lanzará este mensaje:
 					Sino
 						Escribir "Número inválido o artículo ya eliminado."
 					FinSi
@@ -64,7 +77,7 @@ Algoritmo GestionarArticulo
 			4:
 				
 			5:
-				Escribir "Saliendo del programa..."
+				
 			De Otro Modo:
 				Escribir "Digite de nuevo una opcion correcta"
 		FinSegun
