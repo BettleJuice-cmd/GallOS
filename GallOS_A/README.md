@@ -1,1 +1,1 @@
-Carpeta creada por Aráuz
+Todas las funciones o tareas presentes como archivos .psc, fueron extraidos del archivo madre GallOS.psc
