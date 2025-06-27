@@ -5,7 +5,7 @@
 //Fecha:
 //Versión: 1.0
 //Descripción: En este pseudocódigo se gestionara cada artículo que se encuentra disponible en la tienda, el programa hará lo siguiente, 
-//añadir un artículo, editar un artículo, elimar un artículo, ver el inventario y salir del programa
+//podrá agregar un ariticulo nuevo con su cantidad
 
 Algoritmo GallOS_Agregar
 	Definir articulo Como Caracter
