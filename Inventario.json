@@ -1,0 +1,26 @@
+[
+  {
+    "cod": "002",
+    "nombre": "julito el pro ",
+    "cantidad": 22,
+    "precio": 40.0
+  },
+  {
+    "cod": "009",
+    "nombre": "cd",
+    "cantidad": 48,
+    "precio": 5.0
+  },
+  {
+    "cod": "045",
+    "nombre": "5",
+    "cantidad": 0,
+    "precio": 40.0
+  },
+  {
+    "cod": "004",
+    "nombre": "Agente secreto ",
+    "cantidad": 5,
+    "precio": 120.0
+  }
+]

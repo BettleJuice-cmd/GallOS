@@ -1,0 +1,36 @@
+[
+  {
+    "numero": 1,
+    "fecha": "2025-06-24 07:58",
+    "cliente": "armando",
+    "articulos": [
+      {
+        "cod": "002",
+        "nombre": "julito",
+        "cantidad": 4,
+        "precio": 40.0,
+        "subtotal": 160.0
+      }
+    ],
+    "subtotal": 160.0,
+    "iva": 24.0,
+    "total": 184.0
+  },
+  {
+    "numero": 2,
+    "fecha": "2025-06-27 10:18",
+    "cliente": "Cristiano Ronaldo",
+    "articulos": [
+      {
+        "cod": "045",
+        "nombre": "5",
+        "cantidad": 50,
+        "precio": 40.0,
+        "subtotal": 2000.0
+      }
+    ],
+    "subtotal": 2000.0,
+    "iva": 300.0,
+    "total": 2300.0
+  }
+]
