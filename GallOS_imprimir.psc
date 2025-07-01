@@ -49,6 +49,7 @@ Algoritmo GallOS_imprimir
 				Escribir listaVentas[2]
 				Escribir listaVentas[3]
 				Escribir listaVentas[4]
+				Escribir "Presione cualquier tecla para continuar"
 				Esperar Tecla
 				Limpiar Pantalla
 				
@@ -57,6 +58,7 @@ Algoritmo GallOS_imprimir
 				Leer nombreFactura
 				
 				Escribir "IMPRIMIENDO FACTURA..."
+				Escribir "Presione cualquier tecla para continuar"
 				Esperar Tecla
 				Limpiar Pantalla
 				
