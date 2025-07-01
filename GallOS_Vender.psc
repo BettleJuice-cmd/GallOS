@@ -9,15 +9,15 @@ Algoritmo GallOS_Vender
 	Escribir "======================================================"
 	Escribir "   En: Facturar                		    ",FechaActual()
 	
-	Escribir "       ¡BIENVENIDO A LA SECCION DE VENTAS!            "
-	mientras opcion<>3 Hacer
-		Escribir "Por favor, seleccione la opción que desee ejecutar...."
+	Escribir "       Â¡BIENVENIDO A LA SECCION DE VENTAS!            "
+	
+		Escribir "Por favor, seleccione la opciÃ³n que desee ejecutar...."
 		Escribir "1.... Nueva Ventana"
 		Escribir "2.... Salir"
 		leer opcion
+		Limpiar Pantalla
 		Segun opcion Hacer
 			1:
-				Dimensionar  [9]
 				
 				Escribir "======================================================"
 				Escribir "                  SACOS WILO                          "
@@ -28,18 +28,35 @@ Algoritmo GallOS_Vender
 				Escribir "      Ingrse la direccion del cliente: "
 				leer direccion
 				Repetir 
-					Escribir "Ingrese el código del saco que desea vender: "
+					Escribir "Ingrese el cÃ³digo del saco que desea vender: "
 					leer codigo
 					Escribir "Ingrese la cantidad de sacos que desea vender: "
 					leer cantidad
-					Escribir "Desea concluir su venta? (Digite 0 para concluir)"
+					Escribir "Desea concluir su venta? (Digite 0 para concluir 1 para continuar)"
 					leer opcFin
+					Limpiar Pantalla
 				hasta que opcFin=0
-			
+				Escribir "======================================================"
+				Escribir "                  SACOS WILO                          "
+				Escribir "======================================================"
+				Escribir "   En: Facturar                		    ",FechaActual()
+				Escribir "   Imprimiendo Factura.......   					 "
+				Escribir "   Gracias por comprar en Sacos Wilo!                 "
+				Escribir "======================================================"
+				
+				
+			2:
+				Escribir "======================================================"
+				Escribir "                  SACOS WILO                          "
+				Escribir "======================================================"
+				Escribir "   En: Facturar                		    ",FechaActual()
+				Escribir "        Gracias por comprar en Sacos Wilo!            "
+				Escribir "======================================================"
+				
 		
 		
 		FinSegun
-	FinMientras
+
 
 	
 	
