@@ -31,16 +31,7 @@ def iniciar_sesion():
                 print("\n❌ Usuario o contraseña incorrectos.")
                 os.system("pause")
 
-        elif opcion == "2":
-            nueva = input("Nueva contraseña: ")
-            confirm = input("Confirma contraseña: ")
-            if nueva == confirm and nueva != "":
-                contrasena_valida = nueva
-                print("✔ Contraseña restablecida.")
-            else:
-                print("❌ Las contraseñas no coinciden o están vacías.")
-            os.system("pause")
-
+       
         elif opcion == "3":
             print("Adiós.")
             os.system("pause")
