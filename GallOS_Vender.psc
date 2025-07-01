@@ -1,3 +1,10 @@
+//Descripcion: Esta función se encargará de vender los articulos que se encuentren en el inventario
+// Autores: 
+//Joshua Donaire
+//Adolfo Arauz
+//Andy Diaz
+//Kenneth Zamora
+
 Algoritmo GallOS_Vender
 	
 	Definir cliente,fecha, direccion Como Caracter
