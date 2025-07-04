@@ -1,1 +1,1 @@
-Todas las funciones o tareas presentes como archivos .psc, fueron extraidos del archivo madre GallOS.psc
+Se reorganizaron todos los archivos para una mejor presentación
