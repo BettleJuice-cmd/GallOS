@@ -47,7 +47,7 @@ Algoritmo GallOS_Vender
 				Escribir "                  SACOS WILO                          "
 				Escribir "======================================================"
 				Escribir "   En: Facturar                		    ",FechaActual()
-				Escribir "   Imprimiendo Factura.......   					 "
+				Escribir "   Guardando Factura.......   		        "
 				Escribir "   Gracias por comprar en Sacos Wilo!                 "
 				Escribir "======================================================"
 				
