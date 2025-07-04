@@ -15,7 +15,7 @@ Algoritmo GestionarArticulo
 	Definir cantidad Como Entero
 	Definir articulo Como Caracter
 	i=1
-	max=1000000
+	max=100
 	Dimensionar articulo[max]
 	Dimensionar cantidad[max]
 	
@@ -73,11 +73,43 @@ Algoritmo GestionarArticulo
 					FinSi
 				FinSi
 			3:
-				
+				Si i=1 Entonces
+					Escribir "El inventario está vacio, no hay artículos para eliminar"
+				SiNo
+					Escribir "Artículos disponibles para eliminar"
+					Para j=1 Hasta i-1 Hacer
+						Si articulo[j]<>"" Entonces
+							Escribir j, ". ", articulo[j], " - ", cantidad[j], " unidades"
+						FinSi
+					FinPara
+					Escribir "Ingrese el número del artículo que desea eliminar:"
+					Leer pos
+					
+					Si pos>=1 Y pos<i Y articulo[pos]<>"" Entonces
+						Escribir "Eliminando: ", articulo[pos], " (", cantidad[pos], " sacos)"
+						articulo[pos]=""
+						cantidad[pos]=-1
+					SiNo
+						Escribir "Número invalido o producto ya eliminado"
+					FinSi
+				FinSi
 			4:
-				
+				Si i=1 Entonces
+					Escribir "El inventario esta vacio"
+					Para i=1 Hasta totalProducto Hacer
+						Escribir i, ".", articulo[i], "(", cantidad[i],"cantidad)"
+					FinPara
+					
+				SiNo
+					Escribir "Lista de artículos actuales"
+					Para j=1 Hasta i-1 Hacer
+						Si articulo[j]<>"" Entonces
+							Escribir j, ". ", articulo[j], " - ", cantidad[j], " unidades"
+						FinSi
+					FinPara
+				FinSi
 			5:
-				
+				Escribir "Saliendo del programa..."
 			De Otro Modo:
 				Escribir "Digite de nuevo una opcion correcta"
 		FinSegun
