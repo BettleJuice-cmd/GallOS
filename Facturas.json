@@ -1,0 +1,19 @@
+[
+  {
+    "numero": 1,
+    "fecha": "2025-07-08 13:46",
+    "cliente": "",
+    "articulos": [
+      {
+        "cod": "001",
+        "nombre": "Saco ",
+        "cantidad": 1,
+        "precio": 20.0,
+        "subtotal": 20.0
+      }
+    ],
+    "subtotal": 20.0,
+    "iva": 3.0,
+    "total": 23.0
+  }
+]
