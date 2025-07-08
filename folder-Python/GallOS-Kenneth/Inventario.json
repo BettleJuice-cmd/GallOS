@@ -1,0 +1,50 @@
+[
+  {
+    "cod": "002",
+    "nombre": "Saco 110 LIBRAS",
+    "cantidad": 150,
+    "precio": 9.0
+  },
+  {
+    "cod": "003",
+    "nombre": "Sacos rojos 150 libras",
+    "cantidad": 300,
+    "precio": 14.0
+  },
+  {
+    "cod": "004",
+    "nombre": "Sacos rojos 200 LIBRAS",
+    "cantidad": 100,
+    "precio": 15.0
+  },
+  {
+    "cod": "005",
+    "nombre": "Sacos harineros",
+    "cantidad": 550,
+    "precio": 12.0
+  },
+  {
+    "cod": "006",
+    "nombre": "Sacos Bramantes",
+    "cantidad": 50,
+    "precio": 40.0
+  },
+  {
+    "cod": "007",
+    "nombre": "Sacos Pepineros",
+    "cantidad": 199,
+    "precio": 12.0
+  },
+  {
+    "cod": "008",
+    "nombre": "Sacos Chayeros",
+    "cantidad": 300,
+    "precio": 13.0
+  },
+  {
+    "cod": "666",
+    "nombre": "Sacos azules 150 lb",
+    "cantidad": 425,
+    "precio": 20.0
+  }
+]

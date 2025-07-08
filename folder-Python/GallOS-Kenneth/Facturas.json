@@ -1,0 +1,19 @@
+[
+  {
+    "numero": 1,
+    "fecha": "2025-07-08 16:20",
+    "cliente": "ejemplo",
+    "articulos": [
+      {
+        "cod": "007",
+        "nombre": "Sacos Pepineros",
+        "cantidad": 1,
+        "precio": 12.0,
+        "subtotal": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "iva": 1.8,
+    "total": 13.8
+  }
+]
